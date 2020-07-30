@@ -31,7 +31,7 @@ const ReactFlameGraph = () => {
     const onChange = node => console.log(`${node.name} focused`);
 
     return (
-        <div>
+        <div className='flex flex-start justify-center my-16'>
             <FlameGraph data={data} height={200} width={400} onChange={onChange} />
         </div>
     )

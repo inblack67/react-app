@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Navbar from './components/Navbar';
 import ReactFlameGraph from './components/ReactFlameGraph'
-import './App.css';
 
 function App() {
   return (
-    <div className="container">
-      <h2>React Flame Graph Demo</h2>
-      <ReactFlameGraph />
-    </div>
+    <Fragment>
+      <Navbar />
+      <div className="container mx-auto">
+        <ReactFlameGraph />
+      </div>
+    </Fragment>
   );
 }
 
